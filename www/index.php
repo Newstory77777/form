@@ -26,7 +26,7 @@ $result = $mysqli->query('SELECT category.id, category.title, COUNT(post.id) AS 
 
         <tr>
             <td><a href="actions/view.php?id=<?= $row['id'] ?>"><?= $row['title'] ?>(<?= $row['post_count'] ?>)</a></td>
-            <td><a class="edit" href="actions/edit.php?id=<?= $row['id'] ?>">Редактировать</a></td>
+            <td><a class="edit" href="actions/update.php?id=<?= $row['id'] ?>">Редактировать</a></td>
             <td><a class="delete" href="actions/delete.php?id=<?= $row['id'] ?>">Удалить</a></td>
         </tr>
         <?php
